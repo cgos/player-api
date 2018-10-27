@@ -1,12 +1,12 @@
+# The Player API
 This API is meant for a demo using CircleCI, JIB, Docker, GCP, Kubernetes
 
-# The Player API
-basic java microservice using Spring Boot
+This java microservice was generated using start.spring.io [https://start.spring.io/] and it's based on spring-boot-starter-web
 
-# Setting up continous integration using CircleCI
+## Setting up continous integration using CircleCI
 
-# Creating the Dockerfile
+## Creating the Dockerfile
 
-# Setting up Google Kubernetes Engine
+## Setting up Google Kubernetes Engine
 
-# Deploying from CircleCI to GKE
+## Deploying from CircleCI to GKE
