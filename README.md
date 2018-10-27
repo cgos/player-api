@@ -1,7 +1,7 @@
 # The Player API
 This API is meant for a demo using CircleCI, JIB, Docker, GCP, Kubernetes
 
-This java microservice was generated using start.spring.io [https://start.spring.io/] and it's based on spring-boot-starter-web
+This java microservice was generated using [https://start.spring.io/] (start.spring.io) and it's based on spring-boot-starter-web
 
 ## Setting up continous integration using CircleCI
 
