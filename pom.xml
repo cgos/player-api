@@ -6,7 +6,7 @@
 	<groupId>com.scoutingalpha.microservice</groupId>
 	<artifactId>player-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+
 
 	<name>player-api</name>
 	<description>Demo project for Spring Boot</description>
@@ -27,7 +27,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
 		<dependency>
@@ -45,6 +45,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-
 </project>
