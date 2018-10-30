@@ -1,6 +1,7 @@
 package com.scoutingalpha.microservice.playerapi.domain;
 
 import javax.validation.constraints.NotBlank;
+import java.util.Objects;
 
 public class Address {
     private String street;
@@ -62,5 +63,22 @@ public class Address {
                 ", postalCode='" + postalCode + '\'' +
                 ", country='" + country + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Address address = (Address) o;
+        return Objects.equals(street, address.street) &&
+                Objects.equals(city, address.city) &&
+                Objects.equals(provinceCode, address.provinceCode) &&
+                Objects.equals(postalCode, address.postalCode) &&
+                Objects.equals(country, address.country);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(street, city, provinceCode, postalCode, country);
     }
 }
