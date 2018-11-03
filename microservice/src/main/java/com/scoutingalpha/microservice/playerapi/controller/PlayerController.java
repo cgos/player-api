@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/player")
-public class PlayerController {
+class PlayerController {
 
     @GetMapping("/one")
     public Player player(@RequestParam(value="name", defaultValue="Wayne") String name){

@@ -6,29 +6,26 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import javax.validation.ConstraintViolation;
 import javax.validation.Validation;
 import javax.validation.Validator;
-import java.util.Set;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @DisplayName("Address Test")
-public class AddressTest {
-    private static Validator validator;
+class AddressTest {
     private Address address;
 
-    String city = "Beaconsfield";
-    String country = "Canada";
-    String postalCode = "H9W 5M9";
-    String provinceCode = "Qc";
-    String street = "Charleswood";
+    private final String city = "Beaconsfield";
+    private final String country = "Canada";
+    private final String postalCode = "H9W 5M9";
+    private final String provinceCode = "Qc";
+    private final String street = "Charleswood";
 
     @BeforeAll
     static void setup() {
-        validator = Validation.buildDefaultValidatorFactory().getValidator();
+        Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
     }
 
     @BeforeEach

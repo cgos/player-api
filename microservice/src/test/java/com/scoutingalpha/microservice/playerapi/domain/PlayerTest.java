@@ -15,7 +15,7 @@ import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @DisplayName("Player Tests")
-public class PlayerTest {
+class PlayerTest {
     private static Validator validator;
     private Player player;
     private Address address;

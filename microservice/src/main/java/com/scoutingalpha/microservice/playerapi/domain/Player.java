@@ -1,7 +1,6 @@
 package com.scoutingalpha.microservice.playerapi.domain;
 
 import javax.validation.constraints.NotBlank;
-import java.util.Date;
 import java.util.Objects;
 
 public class Player {
