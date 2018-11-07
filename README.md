@@ -8,6 +8,12 @@ In the player-api project you will find:
 * the microservice sub-project
 * the integration test sub-project
 
+To run the server locally, just start the PlayerApiApplication from the microservice/test project. Then it is possible to run
+the integrated test suite by running the PlayerApiIntegrationTest from the test sub-project. Beforehand, you need to configure
+those variable:
+-DbaseURI=http://localhost -Dport=8080 -DbasePath=/
+
+
 ## Setting up continous integration using CircleCI
 
 ## Creating the Dockerfile
