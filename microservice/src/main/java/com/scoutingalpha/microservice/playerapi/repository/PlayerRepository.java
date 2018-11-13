@@ -1,5 +1,12 @@
 package com.scoutingalpha.microservice.playerapi.repository;
 
-public class PlayerRepository {
-    //TODO create a mongodb jhipster projec and create a dummy repository to complete the mocking todo in test
+import com.scoutingalpha.microservice.playerapi.domain.Player;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.Optional;
+
+@Repository
+public interface PlayerRepository extends MongoRepository<Player, String> {
+    Optional<Player> findOneByFullName(String name);
 }
