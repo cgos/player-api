@@ -9,4 +9,4 @@ This java microservice was generated using https://start.spring.io/ and it's bas
 
 ## Setting up Google Kubernetes Engine
 
-## Deploying from CircleCI to GKE
+## Deploying  to GKE
