@@ -35,10 +35,10 @@
         <!--<tag>HEAD</tag>-->
     </scm>
 
-    <!--<modules>-->
-        <!--<module>microservice</module>-->
-        <!--<module>test</module>-->
-    <!--</modules>-->
+    <modules>
+        <module>app</module>
+        <module>test</module>
+    </modules>
 
     <dependencyManagement>
         <dependencies>
