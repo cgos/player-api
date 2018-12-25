@@ -1,4 +1,4 @@
-# The Player API
+# The Player APP
 This API is meant for a demo using CircleCI, JIB, Docker, GCP, Kubernetes
 
 This java microservice was generated using https://start.spring.io/ and it's based on spring-boot-starter-web
