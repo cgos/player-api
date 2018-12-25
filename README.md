@@ -3,6 +3,7 @@ This API is meant for a demo using CircleCI, JIB, Docker, GCP, Kubernetes
 
 This java microservice was generated using https://start.spring.io/ and it's based on spring-boot-starter-web
 
+
 In the player-api project you will find:
 * the parent pom.xml
 * the microservice sub-project
@@ -20,4 +21,4 @@ those variable:
 
 ## Setting up Google Kubernetes Engine
 
-## Deploying from CircleCI to GKE
+## Deploying  to GKE
