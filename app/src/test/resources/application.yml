@@ -10,7 +10,7 @@ spring:
     name: playerApp
   data:
     mongodb:
-      uri: mongodb+srv://mongodb-sa-player:${mongodb_password}@cluster0-zscm2.mongodb.net/test?retryWrites=true
+      uri: mongodb+srv://mongodb-sa-player:${MONGODB_PASSWORD}@cluster0-zscm2.mongodb.net/test?retryWrites=true
       database: players
   profiles:
     # The commented value for `active` can be replaced with valid Spring profiles to load.
