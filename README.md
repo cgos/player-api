@@ -16,7 +16,7 @@ To run the server locally:
 
 Beforehand, you need to configure
 those variable:
--DbaseURI=http://localhost -Dport=8080 -DbasePath=/
+-DMONGODB_PASSWORD=ETqtrwhSXCCwe6Gm
 
 
 ## Setting up continous integration using CircleCI
