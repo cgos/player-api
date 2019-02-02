@@ -1,22 +1,22 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.scoutingalpha.player.app</groupId>
-    <artifactId>player-app-parent</artifactId>
+    <artifactId>player-app</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
-
-    <name>Player API::Parent</name>
+    <name>Player Application</name>
+    <description>Player Application</description>
 
     <properties>
-     <java.version>1.8</java.version>
+        <java.version>1.8</java.version>
         <project.encondig>UTF-8</project.encondig>
 
         <project.build.sourceEncoding>${project.encondig}</project.build.sourceEncoding>
         <project.reporting.outputEncoding>${project.encondig}</project.reporting.outputEncoding>
 
-        <spring-boot.version>2.0.5.RELEASE</spring-boot.version>
+        <spring-boot.version>2.1.2.RELEASE</spring-boot.version>
         <spring-studio-dependencies.version>1.0.0</spring-studio-dependencies.version>
 
         <!-- test -->
@@ -36,8 +36,8 @@
     </scm>
 
     <!--<modules>-->
-        <!--<module>microservice</module>-->
-        <!--<module>test</module>-->
+    <!--<module>microservice</module>-->
+    <!--<module>test</module>-->
     <!--</modules>-->
 
     <dependencyManagement>
@@ -52,33 +52,106 @@
         </dependencies>
     </dependencyManagement>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>${maven-compiler-plugin.version}</version>
-                <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>${maven-surefire-plugin.version}</version>
-            </plugin>
-        </plugins>
-    </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>junit</groupId>
+                    <artifactId>junit</artifactId>
+                </exclusion>
+            </exclusions>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-all</artifactId>
+            <version>1.3</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-launcher</artifactId>
+            <version>1.1.0</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+
+    <!--<build>-->
+    <!--<plugins>-->
+    <!--<plugin>-->
+    <!--<groupId>org.apache.maven.plugins</groupId>-->
+    <!--<artifactId>maven-compiler-plugin</artifactId>-->
+    <!--<version>${maven-compiler-plugin.version}</version>-->
+    <!--<configuration>-->
+    <!--<source>${java.version}</source>-->
+    <!--<target>${java.version}</target>-->
+    <!--</configuration>-->
+    <!--</plugin>-->
+    <!--<plugin>-->
+    <!--<groupId>org.apache.maven.plugins</groupId>-->
+    <!--<artifactId>maven-surefire-plugin</artifactId>-->
+    <!--<version>${maven-surefire-plugin.version}</version>-->
+    <!--</plugin>-->
+    <!--</plugins>-->
+    <!--</build>-->
 
     <!--<distributionManagement>-->
-        <!--<repository>-->
-            <!--<id>digital-factory-releases</id>-->
-            <!--<url>${env.MAVEN_RELEASE_REPOSITORY_URL}</url>-->
-        <!--</repository>-->
-        <!--<snapshotRepository>-->
-            <!--<id>digital-factory-snapshots</id>-->
-            <!--<url>${env.MAVEN_SNAPSHOT_REPOSITORY_URL}</url>-->
-        <!--</snapshotRepository>-->
+    <!--<repository>-->
+    <!--<id>digital-factory-releases</id>-->
+    <!--<url>${env.MAVEN_RELEASE_REPOSITORY_URL}</url>-->
+    <!--</repository>-->
+    <!--<snapshotRepository>-->
+    <!--<id>digital-factory-snapshots</id>-->
+    <!--<url>${env.MAVEN_SNAPSHOT_REPOSITORY_URL}</url>-->
+    <!--</snapshotRepository>-->
     <!--</distributionManagement>-->
 </project>
