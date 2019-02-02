@@ -20,19 +20,19 @@ class PlayerController {
     private final PlayerRepository playerRepository = null;
 
     @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void create(@RequestBody Player player){
+    public void create(@RequestBody Player player) {
         playerRepository.save(player);
     }
 
     @RequestMapping(method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public void update(@RequestBody Player player){
+    public void update(@RequestBody Player player) {
         playerRepository.save(player);
     }
 
-    @RequestMapping(value = "/{id}")
-    public Optional<Player> read(@PathVariable String id){
-        return playerRepository.findById(id);
-    }
+//    @RequestMapping(value = "/{id}")
+//    public Optional<Player> read(@PathVariable String id){
+//        return playerRepository.findById(id);
+//    }
 
 
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
