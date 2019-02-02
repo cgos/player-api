@@ -1,6 +1,6 @@
-package com.scoutingalpha.microservice.player.app.repository;
+package com.scoutingalpha.microservice.player.info.repository;
 
-import com.scoutingalpha.microservice.player.app.domain.Player;
+import com.scoutingalpha.microservice.player.info.domain.Player;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

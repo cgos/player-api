@@ -1,4 +1,4 @@
-package com.scoutingalpha.microservice.player.app.domain;
+package com.scoutingalpha.microservice.player.info.domain;
 
 import java.util.Objects;
 

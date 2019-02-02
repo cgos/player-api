@@ -1,7 +1,7 @@
-package com.scoutingalpha.microservice.player.app.controller;
+package com.scoutingalpha.microservice.player.info.controller;
 
-import com.scoutingalpha.microservice.player.app.domain.Player;
-import com.scoutingalpha.microservice.player.app.repository.PlayerRepository;
+import com.scoutingalpha.microservice.player.info.domain.Player;
+import com.scoutingalpha.microservice.player.info.repository.PlayerRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

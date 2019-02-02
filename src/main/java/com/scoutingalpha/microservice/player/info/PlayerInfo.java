@@ -1,12 +1,12 @@
-package com.scoutingalpha.microservice.player.app;
+package com.scoutingalpha.microservice.player.info;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-class PlayerApiApplication {
+class PlayerInfo {
 
     public static void main(String[] args) {
-        SpringApplication.run(PlayerApiApplication.class, args);
+        SpringApplication.run(PlayerInfo.class, args);
     }
 }

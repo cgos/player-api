@@ -3,11 +3,11 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.scoutingalpha.player.app</groupId>
-    <artifactId>player-app</artifactId>
+    <groupId>com.scoutingalpha.player.info</groupId>
+    <artifactId>player-info</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Player Application</name>
-    <description>Player Application</description>
+    <name>Player Info</name>
+    <description>Player Info</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -34,11 +34,6 @@
         <!--<url>https://gitbnc.cloud.res.bngf.local/Studio/jwks-endpoint-api</url>-->
         <!--<tag>HEAD</tag>-->
     </scm>
-
-    <!--<modules>-->
-    <!--<module>microservice</module>-->
-    <!--<module>test</module>-->
-    <!--</modules>-->
 
     <dependencyManagement>
         <dependencies>
